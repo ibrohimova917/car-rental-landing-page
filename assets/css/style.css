@@ -186,69 +186,134 @@ select {
   justify-content: space-between;
 }
 
-/* .car-section */
+/* car-section */
 
 .car-section {
   width: 1440px;
   height: 1328px;
-  border: 1px solid red;
   margin: auto;
-}
 
-.car-section-header {
-  width: 1296px;
-  height: 118px;
-  border: 1px solid magenta;
-}
-
-.car-grid {
-  width: 1296px;
-  height: 1050px;
-  border: 1px solid blue;
-}
-
-.car-card {
-  width: 416px;
-  height: 513px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+.car-section-header {
+  width: 1296px;
+  height: 118px;
+}
+
+.car-grid {
+  width: 1296px;
+  height: 1050px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.car-card {
+  width: 416px;
+  height: 513px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 18px;
+}
 .car-card > img {
   width: 368px;
   height: 240px;
+  border-radius: 18px;
 }
-
 .car-card-content {
   width: 368px;
   height: 115px;
-  border: 1px solid red;
 }
-
 .car-card-price {
   width: 368px;
   height: 51px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .car-card-price > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
-
 .car-card > button {
   width: 368px;
   height: 50px;
-  background-color: #5937e0;
+  background-color: #5937E0;
   border-radius: 12px;
   color: #fff;
   border: none;
+}
+.car-card-feature {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.car-card-feature ul {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car-card-feature ul li {
+  list-style: none;
+}
+
+/* header */
+.car-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.car-section-header h2 {
+  font-size: 50px;
+}
+.car-section-header > button {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+/* statistics */
+
+.statistics {
+  width: 1440px;
+  height: 606px;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-in {
+  width: 1296px;
+  height: 486px;
+  border-radius: 20px;
+  border: 1px solid magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.static-in .top {
+  width: 756px;
+  height: 121px;
+  border: 1px solid blue;
+}
+
+.static-in .bottom {
+  width: 1296px;
+  height: 100px;
+  border: 1px solid blue;
 }
